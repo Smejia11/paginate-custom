@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "DeployPackage",
+    "strict": true,
+    "removeComments": false
+  },
+  "exclude": ["node_modules", "test"],
+  "include": ["src"] // which files to compile
+}
