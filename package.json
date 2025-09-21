@@ -1,6 +1,6 @@
 {
   "name": "paginate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Lib for paginate.",
   "type": "module",
   "main": "dist/index.js",
