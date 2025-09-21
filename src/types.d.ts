@@ -1,5 +1,5 @@
-import { z } from "zod";
-import { PaginateParamsSchema } from "./schema";
+import { z } from 'zod';
+import { PaginateParamsSchema } from './schema';
 
 export type PaginateParams<T> = {
   page: number;

@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 export const PaginateParamsSchema = z.object({
   page: z.number().int().gt(0),
