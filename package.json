@@ -1,20 +1,37 @@
 {
   "name": "paginate",
-  "version": "1.0.0",
-  "description": "Lib for paginate ",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Lib for paginate.",
+  "type": "module",
+  "main": "dist/index.js",
+  "keywords": [
+    "demo",
+    "typescript"
+  ],
   "scripts": {
-    "test": "node --test --require ts-node/register ./test.ts"
+    "build": "tsc",
+    "ci": "pnpm run build && pnpm run check-format && pnpm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "prepublishOnly": "pnpm run ci",
+    "local-release": "changeset version && changeset publish",
+    "test": "tsx --test ./test.ts"
   },
   "author": "Santiago Mejia",
-  "license": "ISC",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "@types/node": "^20.14.6",
+    "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
-    "tslint": "^6.1.3",
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "piscina": "^5.1.3",
+    "tsx": "^4.20.5",
     "zod": "^3.23.8"
   }
 }
