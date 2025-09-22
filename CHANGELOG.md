@@ -1,5 +1,11 @@
 # paginate
 
+## 2.3.0
+
+### Minor Changes
+
+- 3ad0e7e: feat: add more tests and fix Zod limit validation
+
 ## 2.2.0
 
 ### Minor Changes
