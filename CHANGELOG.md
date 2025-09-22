@@ -1,5 +1,11 @@
 # paginate
 
+## 2.4.0
+
+### Minor Changes
+
+- 9b28b2b: fix: fixed types export
+
 ## 2.3.0
 
 ### Minor Changes
