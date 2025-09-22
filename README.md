@@ -6,7 +6,6 @@ A lightweight and flexible library for array pagination in JavaScript/TypeScript
 
 - ✅ Synchronous and asynchronous pagination
 - ✅ TypeScript support
-- ✅ Static and instance methods
 - ✅ Customizable configuration
 - ✅ URL generation for pagination
 - ✅ Complete metadata information
