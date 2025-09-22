@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { PaginateParamsSchema } from './schema';
+import { PaginateParamsSchema } from './schema.js';
 
 export type PaginateParams<T> = {
   page: number;
@@ -29,21 +29,21 @@ export type PaginateResult<T> = {
   };
 };
 
-export type CursorPaginateParams<T> = {
-  data: T[];
-  perPage: number;
-  identifier: string | number;
-  after?: string | number;
-  before?: string | number;
-};
+// export type CursorPaginateParams<T> = {
+//   data: T[];
+//   perPage: number;
+//   identifier: string | number;
+//   after?: string | number;
+//   before?: string | number;
+// };
 
-export type CursorPaginateResult<T> = {
-  data: T[];
-  pagination: {
-    hasPrevPage: boolean;
-    hasNextPage: boolean;
-    startCursor: string | number;
-    endCursor: string | number;
-    totalPages: number;
-  };
-};
+// export type CursorPaginateResult<T> = {
+//   data: T[];
+//   pagination: {
+//     hasPrevPage: boolean;
+//     hasNextPage: boolean;
+//     startCursor: string | number;
+//     endCursor: string | number;
+//     totalPages: number;
+//   };
+// };
