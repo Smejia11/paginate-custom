@@ -1,23 +1,67 @@
 # Paginate Library
 
-## Description
+# Paginate Custom VSM
 
-This library is designed to provide pagination functionality for data in various applications. It leverages the power of TypeScript and Zod for type-safe validation and parsing of pagination parameters.
+A lightweight and flexible library for array pagination in JavaScript/TypeScript, with support for synchronous and asynchronous operations, and advanced pagination features.
+
+## Features
+
+- ✅ Synchronous and asynchronous pagination
+- ✅ TypeScript support
+- ✅ Static and instance methods
+- ✅ Customizable configuration
+- ✅ URL generation for pagination
+- ✅ Complete metadata information
+- ✅ Easy integration with REST APIs
 
 ## Installation
-
-To install this library, run the following command:
 
 ```bash
-npm install i
+npm install paginate-custom-vsm
+```
 
-## Installation
-Require node 20.0.0 or higher and npm 7.0.0 or higher
+## Synchronous Pagination
 
-## Contributing
-Feel free to open an issue or submit a pull request if you have any suggestions or improvements to the library.
+```js
+import { PaginateUtils } from 'paginate-custom-vsm';
 
-## License
-This project is licensed under the ISC license.
+const data = Array.from({ length: 100 }, (_, i) => ({
+  id: i + 1,
+  name: `Item ${i + 1}`,
+}));
 
+// Instance method
+const paginator = new PaginateUtils();
+const result = paginator.getPaginate({
+  data,
+  page: 2,
+  limit: 10,
+  url: 'https://api.example.com/items',
+});
+
+console.log(result.data); // Items 11-20
+```
+
+## Asynchronous Pagination
+
+```js
+import { PaginateUtilsAsync } from 'paginate-custom-vsm';
+
+async function fetchUserData() {
+  const users = await getUsersFromDatabase(); // Your async function
+
+  const paginator = new PaginateUtilsAsync();
+  const result = await paginator.getPaginateAsync({
+    data: users,
+    page: 1,
+  });
+
+  return result;
+}
+```
+
+## Test
+
+```bash
+npm run test
 ```
