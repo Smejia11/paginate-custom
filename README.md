@@ -1,5 +1,3 @@
-# Paginate Library
-
 # Paginate Custom VSM
 
 A lightweight and flexible library for array pagination in JavaScript/TypeScript, with support for synchronous and asynchronous operations, and advanced pagination features.
