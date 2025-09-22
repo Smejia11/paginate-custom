@@ -1,6 +1,6 @@
 {
   "name": "paginate-custom-vsm",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Lib for paginate.",
   "type": "module",
   "main": "dist/index.js",
