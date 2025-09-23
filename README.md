@@ -49,16 +49,12 @@ async function fetchUserData() {
 
   const paginator = new PaginateUtilsAsync();
   const result = await paginator.getPaginateAsync({
-    data: users,
-    page: 1,
+    data,
+    page: 2,
+    limit: 10,
+    url: 'https://api.example.com/items',
   });
 
   return result;
 }
-```
-
-## Test
-
-```bash
-npm run test
 ```

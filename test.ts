@@ -28,7 +28,7 @@ describe('paginate unit tests', () => {
         currentPage: 1,
         hasPrevPage: false,
         hasNextPage: true,
-        url: 'http://localhost:9087?page=1',
+        url: 'http://localhost:9087/?page=1&limit=10',
       }),
     );
   });
@@ -60,7 +60,7 @@ describe('paginate utils extra unit tests', () => {
         currentPage: 5,
         hasPrevPage: true,
         hasNextPage: true,
-        url: 'http://localhost:9087?page=5',
+        url: 'http://localhost:9087/?page=5&limit=10',
       }),
     );
   });
@@ -88,7 +88,7 @@ describe('paginate utils extra unit tests', () => {
         currentPage: 10,
         hasPrevPage: true,
         hasNextPage: false,
-        url: 'http://localhost:9087?page=10',
+        url: 'http://localhost:9087/?page=10&limit=10',
       }),
     );
   });
@@ -116,7 +116,7 @@ describe('paginate utils extra unit tests', () => {
         currentPage: 20,
         hasPrevPage: true,
         hasNextPage: false,
-        url: 'http://localhost:9087?page=20',
+        url: 'http://localhost:9087/?page=20&limit=10',
       }),
     );
   });
@@ -144,7 +144,7 @@ describe('paginate utils extra unit tests', () => {
         currentPage: 2,
         hasPrevPage: true,
         hasNextPage: true,
-        url: 'http://localhost:9087?page=2',
+        url: 'http://localhost:9087/?page=2&limit=25',
       }),
     );
   });
@@ -172,7 +172,7 @@ describe('paginate utils extra unit tests', () => {
         currentPage: 1,
         hasPrevPage: false,
         hasNextPage: false,
-        url: 'http://localhost:9087?page=1',
+        url: 'http://localhost:9087/?page=1&limit=10',
       }),
     );
   });
@@ -204,7 +204,7 @@ describe('paginate unit tests async', () => {
         currentPage: 1,
         hasPrevPage: false,
         hasNextPage: true,
-        url: 'http://localhost:9087?page=1',
+        url: 'http://localhost:9087/?page=1&limit=10',
       }),
     );
   });

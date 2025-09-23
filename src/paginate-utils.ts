@@ -33,8 +33,6 @@ export class PaginateUtils {
     const from = offset + 1;
     const to = offset + paginatedItems.length;
 
-    const urlWithPage = (page: number): string => `${url}?page=${page}`;
-
     const pagination = {
       totalPage,
       nextPage,
@@ -48,12 +46,30 @@ export class PaginateUtils {
       currentPage: page,
       hasPrevPage: page > 1,
       hasNextPage: page < totalPage,
-      url: urlWithPage(page),
+      url: this.urlWithPage({ page, url, limit }),
     };
 
     return {
       data: paginatedItems,
       pagination,
     };
+  }
+  private urlWithPage({
+    page,
+    url,
+    limit,
+  }: {
+    page: number;
+    limit: number;
+    url: string;
+  }): string {
+    const uri = new URL(url);
+    const parseLimit = limit.toString();
+    const parsePage = page.toString();
+    uri.search = new URLSearchParams({
+      page: parsePage,
+      limit: parseLimit,
+    }).toString();
+    return uri.href;
   }
 }
