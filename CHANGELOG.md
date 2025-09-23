@@ -1,5 +1,11 @@
 # paginate
 
+## 2.5.0
+
+### Minor Changes
+
+- 54545cd: refactor urlWithPage
+
 ## 2.4.0
 
 ### Minor Changes
