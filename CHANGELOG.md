@@ -1,5 +1,11 @@
 # paginate
 
+## 2.5.1
+
+### Patch Changes
+
+- 2d99406: fix: added repo in package json
+
 ## 2.5.0
 
 ### Minor Changes
