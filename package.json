@@ -8,6 +8,14 @@
     "demo",
     "typescript"
   ],
+  "homepage": "https://github.com/Smejia11/paginate-custom",
+  "bugs": {
+    "url": "https://github.com/Smejia11/paginate-custom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smejia11/paginate-custom.git"
+  },
   "scripts": {
     "build": "tsc",
     "ci": "pnpm run build && pnpm run check-format && pnpm run test",

@@ -58,3 +58,64 @@ async function fetchUserData() {
   return result;
 }
 ```
+
+### Example response
+
+```ts
+type PaginateResult<T> = {
+  data: T[];
+  pagination: {
+    totalPage: number;
+    nextPage: number | null;
+    prevPage: number | null;
+    firstPage: number;
+    lastPage: number;
+    from: number;
+    to: number;
+    perPage: number;
+    total: number;
+    currentPage: number;
+    hasPrevPage: boolean;
+    hasNextPage: boolean;
+    url: string;
+  };
+};
+```
+
+### 🌐 Important Links
+
+-Homepage: https://github.com/Smejia11/paginate-custom
+
+-Repository: git+https://github.com/Smejia11/paginate-custom.git
+
+-Issues: https://github.com/Smejia11/paginate-custom/issues
+
+### 🤝 Contributing
+
+Contributions are welcome.
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Execute
+
+```bash
+npm run format
+```
+
+or
+
+```
+pnpm run format
+```
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+## License
+
+MIT
